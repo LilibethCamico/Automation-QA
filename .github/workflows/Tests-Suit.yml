@@ -1,0 +1,30 @@
+name: 🤖CI run (BUILD) Test Suite Execution⚡
+run-name: ${{github.actor}}👨🏻‍🔬 run Test Suite in ${{github.ref_name}}
+
+on:
+    push:
+        branches: # con branches-ignore para ignorar pero ahorita no queremos que lo haga
+            - main
+jobs:
+    Regression-Test:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: 💻Checkout
+              uses: actions/checkout@v3
+
+            - name: 💿Install Node.js
+              uses: actions/setup-node@v3
+              with:
+                  node-version: 16
+
+            - name: 🧬Install All Dependencies
+              run: |
+                  npm ci
+
+            - name: 🧪Cypress Run Test Coverage in Chrome
+              uses: cypress-io/github-action@v4
+              with:
+                  browser: chrome
+                  command: | #regression lo tomamos del file package.json scripts/regression
+                      npm run regression 

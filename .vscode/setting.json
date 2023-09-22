@@ -1,0 +1,11 @@
+{
+    "workbench.settings.editor": "json",
+    "editor.tabCompletion": "on",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "eslint.format.enable": true,
+    "eslint.codeAction.showDocumentation": {
+        "enable": true
+    }
+}

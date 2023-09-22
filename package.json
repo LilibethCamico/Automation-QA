@@ -1,12 +1,19 @@
 {
   "name": "tests",
   "version": "1.0.0",
-  "description": "",
+  "description": "Repositorio para crear pruebas Automatizadas",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress open",
+    "file": "cypress run --browser chrome --spec"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Lilibeth Camico",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "13.2.0",
+    "eslint": "8.49.0",
+    "eslint-plugin-only-warn": "1.1.0",
+    "prettier": "3.0.3"
+  }
 }

@@ -12,15 +12,15 @@
     "plugins": [
         "only-warn"
     ],
-    
+
     "rules": {
         "indent": [
             "warn",
-            "tab"
+            2
         ],
         "quotes": [
             "warn",
-            "double"
+            "single"
         ],
         "semi": [
             "warn",

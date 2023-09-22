@@ -1,0 +1,8 @@
+{
+    "baseUrl": "https://www.saucedemo.com/",
+    "user": {
+        "username": "standard_user",
+        "password": "secret_sauce"
+
+    } 
+}

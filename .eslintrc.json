@@ -16,7 +16,7 @@
     "rules": {
         "indent": [
             "warn",
-            2
+            "tab"
         ],
         "quotes": [
             "warn",

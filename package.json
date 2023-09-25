@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "Repositorio para crear pruebas Automatizadas",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "cypress open",
-    "file": "cypress run --browser chrome --spec 'cypress/e2e/**/**'",
+    "file": "cypress run --browser chrome --spec",
     "regression": "cypress run --browser chrome"
   },
   "keywords": [],

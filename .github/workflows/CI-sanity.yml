@@ -1,13 +1,12 @@
-name: 🤖CI run (Regression) Test Suite Execution⚡
+name: 🤖CI run (Sanity) Test Suite Execution⚡
 run-name: ${{github.actor}}👨🏻‍🔬 run Test Suite in ${{github.ref_name}}
 
 on:
     push:
-        branches: 
+        branches-ignore: #IGNORA MAIN, Y SE EJECUTA EN CUALQUIER OTRA
             - main
-            
 jobs:
-    Regression-Test:
+    Sanity-Test:
         runs-on: ubuntu-latest
 
         steps:
@@ -27,5 +26,5 @@ jobs:
               uses: cypress-io/github-action@v4
               with:
                   browser: chrome
-                  command: |  #con regressión lo toma del scripts en package.json
-                      npm run regression
+                  command: |  #EDITAR AQUÍ EL ARCHIVO SUITE A EJECUTAR:
+                      npm run file cypress/e2e/Tests/BookStoreApp/login.cy.js

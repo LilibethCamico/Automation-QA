@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress open",
-    "file": "cypress run --browser chrome --spec 'cypress/e2e/**/*'",
+    "file": "cypress run --browser chrome --spec 'cypress/e2e/**/**'",
     "regression": "cypress run --browser chrome"
   },
   "keywords": [],

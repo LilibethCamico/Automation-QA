@@ -3,8 +3,8 @@ run-name: ${{github.actor}}👨🏻‍🔬 run Test Suite in ${{github.ref_name}
 
 on:
     push:
-        branches: 
-            - main
+        branches: #solo correra en QA, por el momento despues hacer PR y merge Manual 
+            - QA
             
 jobs:
     Regression-Test:

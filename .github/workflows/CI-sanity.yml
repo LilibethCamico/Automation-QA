@@ -5,6 +5,7 @@ on:
     push:
         branches-ignore: #IGNORA MAIN, Y SE EJECUTA EN CUALQUIER OTRA
             - main
+            - QA
 jobs:
     Sanity-Test:
         runs-on: ubuntu-latest
@@ -26,5 +27,5 @@ jobs:
               uses: cypress-io/github-action@v4
               with:
                   browser: chrome
-                  command: |  #EDITAR AQUÍ EL ARCHIVO SUITE A EJECUTAR:
+                  command: |  #EDITAR AQUÍ EL ARCHIVO SUITE A EJECUTAR, file viene de package.json:
                       npm run file cypress/e2e/Tests/BookStoreApp/login.cy.js

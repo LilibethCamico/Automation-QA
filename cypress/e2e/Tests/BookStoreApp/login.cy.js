@@ -2,7 +2,10 @@ describe('WS-Create Profile', () => {
 	beforeEach('PRC: Enter in Page', () => {
 		cy.visit(dataLogin.baseUrl);
 	});
-	it('Crear Perfil', () => {
+	it('Create profile', () => {
+		expect(true).to.equal(true);
+	});
+	it('Other profile', () => {
 		expect(true).to.equal(true);
 	});
 });

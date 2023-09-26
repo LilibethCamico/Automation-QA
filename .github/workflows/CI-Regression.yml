@@ -5,7 +5,6 @@ on:
   pull_request:
         branches: #solo correra en la siguiente Branch, por el momento despues hacer lo anterior 
             - main
-            - QA
             
 jobs:
     Regression-Test:

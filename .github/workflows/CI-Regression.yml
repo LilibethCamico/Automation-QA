@@ -2,8 +2,9 @@ name: 🤖CI run (Regression) Test Suite Execution⚡
 run-name: ${{github.actor}}👨🏻‍🔬 run Test Suite in ${{github.ref_name}}
 
 on:
-    push:
-        branches: #solo correra en QA, por el momento despues hacer PR y merge Manual 
+  pull_request:
+        branches: #solo correra en la siguiente Branch, por el momento despues hacer lo anterior 
+            - main
             - QA
             
 jobs:

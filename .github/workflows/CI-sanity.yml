@@ -3,7 +3,7 @@ run-name: ${{github.actor}}👨🏻‍🔬 run Test Suite in ${{github.ref_name}
 
 on:
     push:
-        branches-ignore: #IGNORA MAIN, Y SE EJECUTA EN CUALQUIER OTRA
+        branches-ignore: #IGNORA MAIN y en otra en dado caso, Y SE EJECUTA EN CUALQUIER OTRA
             - main
             - QA
 jobs:

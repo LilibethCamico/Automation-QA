@@ -2,9 +2,7 @@ describe('WS-Create Profile', () => {
 	beforeEach('PRC: Enter in Page', () => {
 		cy.visit(data.baseUrl);
 	});
-	it('Access', () => {
-		expect(true).to.equal(true);
-	});
+	
 	it('Choose departure and destination city', () => {
 		//cy.get('select[name="fromPort"]').select('Boston');
 		cy.get('select[name="fromPort"] option').then((options) => {

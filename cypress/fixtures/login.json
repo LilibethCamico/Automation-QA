@@ -1,5 +1,5 @@
 {
-    "baseUrl": "https://demoqa.com/",
+    "baseUrl": "https://www.saucedemo.com/v1/",
     "user": {
         "username": "standard_user",
         "password": "secret_sauce"
